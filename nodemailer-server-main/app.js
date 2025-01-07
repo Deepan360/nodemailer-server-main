@@ -33,7 +33,7 @@ app.post('/api/send-email', (req, res) => {
   };
 
   // Send email
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (error, info) => { 
     if (error) {
       console.error(error);
       return res.status(500).json({ error: 'Failed to send message' });
