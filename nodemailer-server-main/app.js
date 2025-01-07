@@ -9,7 +9,7 @@ const port = 8099;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json()); // To parse JSON request body
-
+ 
 // Set up Nodemailer transporter
 // Email Configuration
 const transporter = nodemailer.createTransport({
